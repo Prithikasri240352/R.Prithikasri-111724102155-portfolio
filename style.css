@@ -1,0 +1,169 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#faf7f2;
+  color:#2b2b2b;
+  transition:.4s;
+}
+
+/* PARALLAX */
+.parallax{
+  position:fixed;
+  inset:0;
+  background:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085")
+  center/cover;
+  opacity:.08;
+  z-index:-1;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+  color:#7a4b00;
+}
+
+nav a{
+  margin:0 14px;
+  text-decoration:none;
+  color:inherit;
+}
+
+.toggle-btn{
+  background:none;
+  border:none;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  padding:80px 60px;
+  gap:50px;
+  align-items:center;
+}
+
+.hero-img{
+  height:360px;
+  border-radius:24px;
+  background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f")
+  center/cover;
+}
+
+/* NAME */
+.name span{
+  font-size:48px;
+  font-weight:800;
+  color:#7a4b00;
+  display:inline-block;
+  animation:bounce 3s infinite;
+}
+
+@keyframes bounce{
+  40%{transform:translateY(-12px)}
+}
+
+/* SECTION */
+.section{
+  padding:90px 60px;
+}
+
+.section-title{
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+/* SKILLS FLEXBOX */
+.skills-grid{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.skill-card{
+  width:140px;
+  height:160px;
+  background:#fff;
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.skill-card img{
+  width:60px;
+  height:60px;
+}
+
+.skill-card p{
+  margin-top:10px;
+  font-weight:600;
+}
+
+/* PROJECT – NEW STYLE */
+.project-card.new-style{
+  display:flex;
+  gap:30px;
+  background:#fff;
+  padding:30px;
+  border-radius:24px;
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.project-img-small{
+  width:260px;
+  height:200px;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+
+/* BUTTON */
+.btn{
+  padding:10px 24px;
+  border-radius:30px;
+  border:2px solid #7a4b00;
+  color:#7a4b00;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+}
+
+/* DARK MODE */
+body.dark{
+  background:#121212;
+  color:#eee;
+}
+
+body.dark .skill-card,
+body.dark .project-card{
+  background:#1f1f1f;
+}
+
+body.dark .logo{
+  color:#f0b35a;
+}
